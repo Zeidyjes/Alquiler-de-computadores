@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=googleapis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi primera pagina</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/DesarrolloMision/JS/funciones.js"></script>
+    <link rel="stylesheet" href="/DesarrolloMision/CSS/estilos.css">
+</head>
+<body>
+ 
+<div class="contenedorcompu">
+    <div class="Titulos">
+        <h1>Desarrollo RETO 2 </h1>
+        <h2>Formulario de registro Computadores</h2>  
+    </div>
+   
+<div class="contenedor1">
+    <input id="numID" type="number" placeholder="ID" required></input>
+    <label> ID </label>
+    <input id="marca" type="text" placeholder="BRAND"></input>
+    <label> MARCA </label>
+    <input id="modelo" type="number" placeholder="MODEL"></input>
+    <label> MODELO </label>
+    <input id="categoria" type="number" placeholder="CATEGORY"></input>
+    <label> CATEGORIA </label>
+    <input id="nombre" type="text" placeholder="NAME"></input>
+    <label> NOMBRE </label>  
+    <button onclick="acciones('agregar',1)"  id="btnGuardar"> Guardar </button> 
+    <button onclick= "acciones('listar',1)"  id="btnListar"> Listar </button> 
+    <button onclick="acciones('actualizar',1)" id="btnUpdate" > Update </button>
+</div>  
+<div class = "contenedor2" id= "listacomputador">  
+
+
+
+</div>
+</div>
+
+<div class="contenedorcompu">
+    <div class="Titulos">
+        <h2>Formulario de registro Clientes</h2>  
+    </div>
+   
+<div class="contenedor3">
+    <input id="numerID" type="number" placeholder="ID cliente" class="clientes"></input>
+    <label> ID</label>
+     <input id="Nom_cliente" type="text" placeholder="Nombre cliente" class="clientes"></input>
+    <label> Nombre</label>
+    <input id="Correo" class="clientes" type="email" placeholder="Email."></input>
+    <label> Correo </label>
+    <input id="años" class="clientes" type="number" placeholder="Edad"></input>
+    <label> Edad </label>
+    <button onclick="acciones('agregar',2)" id="btnGuardar2"> Guardar</button> 
+    <button onclick= "acciones('listar',2)"  id="btnListar2"> Listar </button> 
+    <button onclick="acciones('actualizar',2)" id="btnUpdate2"> Update </button> 
+ </div>  
+<div class = "contenedor3" id= "listacliente">  
+</div>
+</div>
+<div class="contenedorcompu">
+    <div class="Titulos">
+        <h2>Formulario de registro mensaje</h2>  
+    </div>  
+   
+<div class="contenedor3">
+    <input id="mesageID" type="number" placeholder="ID mensaje" class="clientes"></input>
+    <label> ID</label>
+    <label style="margin-left:45px;"> Mensaje</label>
+    <div></div>
+    <textarea id="mensaje" type="textarea" rows="10" cols="10" placeholder="Escriba mensaje" class="clientes"></textarea>
+    <div></div>
+    <button onclick="acciones('agregar',3)" id="btnGuardar3"> Guardar</button> 
+    <button onclick= "acciones('listar',3)"  id="btnListar3"> Listar </button> 
+    <button onclick="acciones('actualizar',3)" id="btnUpdate3"> Update </button> 
+ </div>  
+<div class = "contenedor3" id= "listamensaje">  
+</div>
+</div>
+
+</body>
+
+
+</html>
